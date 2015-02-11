@@ -1,0 +1,10 @@
+{% extends 'bunk/base.html' %}
+
+{% block content %}
+    <h1>Who do you want to bunk {{user.first_name}}?</h1>
+    
+    <form method="POST" class="post-form"> {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Bunk</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends 'bunk/base.html' %}
+
+{% block content %}
+	{% for bunk in data %}
+		{% include 'bunk/bunk_feed.html' %}
+	{% endfor %}
+{% endblock content %}

@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="image col-md-2">
+		<img src={{bunk.from_user_url}} width="121" height="121"/>
+		<div class="user-link">
+			<a class="user-link" href="{% url 'bunk.views.my_feed' user_key=bunk.from_user_pk %}">{{bunk.from_username}}</a>
+		</div>
+	</div>	
+	<div class="col-message bunked col-md-2">Bunked <span class="glyphicon glyphicon-hand-right"></span></div>
+	<div class="col-md-2">
+		<img src={{bunk.to_user_url}} width="121" height="121"/>
+		<div class="user-link">
+			<a href="{% url 'bunk.views.my_feed' user_key=bunk.to_user_pk %}">{{bunk.to_username}}</a>
+		</div>
+	</div>
+	<div class="col-message col-md-3">on<span style="margin-left: 10px">{{bunk.bunk_time}}</span></div>
+</div>
