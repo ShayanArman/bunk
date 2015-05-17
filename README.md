@@ -1,5 +1,6 @@
 Django JitterBunk App
 ---------------------
+"""READ jitterbunk.pdf for a complete description."""  
 My version of the poking feature on Facebook implemented in Django.  
 "Bunking" = "Poking"
 
